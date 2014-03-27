@@ -1,0 +1,47 @@
+﻿#Q {
+    margin: 0 0 0 350px;
+    width: 500px;
+}
+#lupa {
+    width: 10px;
+    height: 10px;
+}
+#rodape {
+    margin: 0 0 0 450px;  
+}
+#empresasHome {
+    margin: 0 0 0 120px;
+}
+#empresas {
+    margin: 0 0 0 200px;
+}
+#paginaIndex {
+    margin: 0 0 0 500px;
+}
+#botaoPainel {
+    margin: 0 0 0 1250px;
+}
+#formPainel {
+    margin: 0 180px 0 120px;
+    padding: 0 300px 0 300px;
+}
+#usuario {
+    margin: 0 0 0 1230px;
+    font-size: 14px;
+}
+#ErrorUser {
+    margin: 0 0 0 500px;
+    color: red;
+}
+#Sair {
+    margin: 0 0 0 10px;
+}
+#AlinhamentoTabelaPainel {
+    margin: 0 250px 0 250px;
+}
+#AlinhamentoBotaoPainel {
+    margin: 0 0 30px 250px;
+}
+#sucesso{
+    margin: 0 350px 0 350px;
+}

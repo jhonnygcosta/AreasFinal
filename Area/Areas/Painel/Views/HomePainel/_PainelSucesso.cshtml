@@ -1,0 +1,106 @@
+﻿@model Area.Areas.Painel.Models.Usuario
+@{
+    Layout = "~/Areas/Painel/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Painel Administrativo <p id="usuario">Olá, <b>Jhonny</b> <a id="Sair" href="~/Painel/HomePainel/Login">Sair</a></p></h1>
+<hr />
+<br />
+<a href="~/Painel/HomePainel/CadastrarEmpresa">
+    <button id="AlinhamentoBotaoPainel" type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-plus"></span> Nova Empresa
+    </button>
+</a>
+<br />
+<br />
+<div id="sucesso" class="alert alert-success">Registro salvo com sucesso!</div>
+<br />
+<br />
+<div id="AlinhamentoTabelaPainel" class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Empresas cadastradas</div>
+
+    <!-- Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FAAr Empresas</td>
+                <td>69 3535-5591</td>
+                <td>Av. Capitão Silvio, 3516 - Ariquemes/RO</td>
+                <td>
+                    <a href="~/Painel/HomePainel/EditarEmpresa"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                    <a href="~/Painel/HomePainel/CancelarEmpresa"><span class="glyphicon glyphicon-remove"></span></a>&nbsp;
+                    <a href="~/Painel/HomePainel/DetalheEmpresa"><span class="glyphicon glyphicon-th-list"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td>W7BR Soluções em Tecnologia</td>
+                <td>69 3535-5591</td>
+                <td>Av. Tancredo Neves, 2016 - Ariquemes/RO</td>
+                <td>
+                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp;
+                    <a href="#"><span class="glyphicon glyphicon-th-list"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Auto Posto Canaã</td>
+                <td>69 3535-5591</td>
+                <td>Av. JK, 3300 - Ariquemes/RO</td>
+                <td>
+                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp;
+                    <a href="#"><span class="glyphicon glyphicon-th-list"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Supermercado Revelação</td>
+                <td>69 3535-5591</td>
+                <td>Av. Jamari, 1416 - Ariquemes/RO</td>
+                <td>
+                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp;
+                    <a href="~#"><span class="glyphicon glyphicon-th-list"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td>IG Shopping</td>
+                <td>69 3535-5591</td>
+                <td>Av. Canaã, 816 - Ariquemes/RO</td>
+                <td>
+                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp;
+                    <a href="~#"><span class="glyphicon glyphicon-th-list"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Global Informática</td>
+                <td>69 3535-5591</td>
+                <td>Av. Guaporé, 416 - Ariquemes/RO</td>
+                <td>
+                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp;
+                    <a href="~#"><span class="glyphicon glyphicon-th-list"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Pizzaria</td>
+                <td>69 3535-5591</td>
+                <td>Av. Jaru, 1996 - Ariquemes/RO</td>
+                <td>
+                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+                    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp;
+                    <a href="~#"><span class="glyphicon glyphicon-th-list"></span></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,28 @@
+﻿@model Area.Areas.Painel.Models.Usuario
+@{
+    Layout = "~/Areas/Painel/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Excluir Empresa</h1>
+
+<ul class="nav nav-pills">
+    <li><a href="~/Painel/HomePainel/_Painel">Voltar</a></li>
+</ul>
+<hr />
+<br />
+<h2 style="margin: 0 0 0 210px;">Deseja realmente excluir esta empresa?</h2>
+    <div id="empresas" class="row">
+        <div class="col-xs-6 col-md-2">
+            <a href="~/Home/DetalheEmpresa" class="thumbnail">
+                <img data-src="holder.js/100%x180" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4=" alt="...">
+            </a>
+            <h2>FAAr Empresas</h2>
+            <p>Endereço: Avenida Canaã, 2906</p>
+            <p>Fone: <small>(69)</small> 3535-5591</p>
+        </div>
+    </div>
+<div style="margin: 0 0 0 200px;" class="col-sm-offset-2 col-sm-10">
+    <a href="~/Painel/HomePainel/_PainelExcluirSucesso" /><button type="submit" class="btn btn-default">Sim</button></a>
+    <span><a href="~/Painel/HomePainel/_Painel">Não</a></span>
+</div>
+

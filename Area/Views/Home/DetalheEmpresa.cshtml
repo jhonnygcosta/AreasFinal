@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h1>Detalhe da Empresa</h1>
+<ul class="nav nav-pills">
+    <li class="active"><a href="~/Home/Index">Início</a></li>
+    <li><a href="~/Home/Empresas">Empresas</a></li>
+    <li id="botaoPainel"><a href="~/Painel/HomePainel/Login">Painel</a></li>
+</ul>
+<hr />
+<br />
+<form class="navbar-form navbar-left" role="search" method="POST" action="">
+    <div class="form-group">
+        <input id="Q" name="Q" type="text" class="form-control" placeholder="Pesquisar...">
+    </div>
+    <span class="glyphicon glyphicon-search"></span>
+</form>
+<br />
+<br />
+<br />
+<br />
+<div id="empresas" class="row">
+    <div class="col-xs-6 col-md-2">
+        <a href="~/Home/DetalheEmpresa" class="thumbnail">
+            <img data-src="holder.js/100%x180" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4=" alt="...">
+        </a>
+        <h2>FAAr Empresas</h2>
+        <p>Endereço: Avenida Capitão Silvio, 3516</p>
+        <p>Fone: <small>(69)</small> 3535-5591</p>
+    </div>
+</div>
