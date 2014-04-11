@@ -1,0 +1,12 @@
+﻿@model TrabalhoADO.Areas.Painel.Models.Empresa
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Areas/Painel/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <img src="~/Content/Images/empresa.jpg" />
+    <h2>@Model.Nome</h2>
+    <h3>@Model.Telefone</h3>
+    <h3>@Model.Endereco</h3>
+</div>

@@ -1,0 +1,13 @@
+﻿@model List<TrabalhoADO.Areas.Painel.Models.Empresa>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-xs-6 col-md-2">
+            <a class="thumbnail" href="~/Painel/@Url.Action("Detalhes", "Painel", new{@id= item.EmpresaId})" title="Detalhes">
+                <img src="~/Content/Images/empresa.jpg" />
+                @item.Nome
+            </a>
+        </div>
+    }
+</div>

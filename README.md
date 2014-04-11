@@ -1,4 +1,0 @@
-AreasFinal
-==========
-
-AreasFinal

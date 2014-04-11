@@ -1,0 +1,51 @@
+﻿@using TrabalhoADO.Areas.Painel.Controllers
+@using TrabalhoADO.Areas.Painel.Models
+@model TrabalhoADO.Areas.Painel.Models.Empresa
+@{
+    ViewBag.Title = "NovoCadastro";
+    Layout = "~/Areas/Painel/Views/Shared/_Layout.cshtml";
+}
+<form class="form-horizontal" method="POST" action="">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Nova empresa</legend>
+
+        <!-- Text input-->
+        <div class="control-group">
+            <label class="control-label">Nome</label>
+            <div>
+                <input id="Nome" name="Nome" type="text">
+            </div>
+            
+            <label class="control-label">Telefone</label>
+            <div>
+                <input id="Telefone" name="Telefone" type="text">
+            </div>
+            <div class="form-group">
+                <label>Categoria</label>
+
+                <select class="form-control" id="catId" name="catId">
+                    @foreach (var item in (List<Empresa>)ViewBag.listaDeCategorias)
+                    {
+                        <option value="@item.CatId">@item.CatId</option>
+                    }
+                </select>
+            </div>
+
+            
+            <label class="control-label">Endereco</label>
+            <div>
+                <input id="Endereco" name="Endereco" type="text">
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button id="enviar" name="enviar" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
